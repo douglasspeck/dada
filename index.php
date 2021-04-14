@@ -42,6 +42,7 @@
                     str_replace('!', '', $words[$i]);
                     str_replace('?', '', $words[$i]);
                     str_replace('"', '', $words[$i]);
+                    shuffle($words);
                     echo
                         '<div class="cell" ondrop="drop(event)">
                         <span class="word" draggable="true" ondragstart="drag(event)">', $words[$i], '</span>
