@@ -1,20 +1,11 @@
 function dada() {
+    var input = document.getElementById('inputText').value;
+    removepunctuation(input);
     var words = new Array();
-    words = document.getElementById('inputText').value.split(' ');
+    words = input.split(' ');
     document.getElementById('first').classList.add('hidden');
     document.getElementById('second').classList.remove('hidden');
     shuffle(words);
-    for(let i=0; i<words.length; i++) {
-        words[i].replace(',', '');
-        words[i].replace('.', '');
-        words[i].replace(':', '');
-        words[i].replace('!', '');
-        words[i].replace('?', '');
-        words[i].replace('"', '');
-        words[i].replace(';', '');
-        words[i].replace('(', '');
-        words[i].replace(')', '');
-    }
     for(let i=0; i<words.length; i++) {
         var newCell = stringToHTML('<div class="cell" ondrop="drop(event)"><span class="word" draggable="true" ondragstart="drag(event)">' + words[i] + '</span></div>');
         document.getElementById("words").append(newCell);
@@ -47,3 +38,15 @@ function shuffle(array) {
 	return dom;
 
 };
+
+function removepunctuation(str) {
+    str.replace(',', '');
+    str.replace('.', '');
+    str.replace(':', '');
+    str.replace('!', '');
+    str.replace('?', '');
+    str.replace('"', '');
+    str.replace(';', '');
+    str.replace('(', '');
+    str.replace(')', '');
+}

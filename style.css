@@ -112,7 +112,7 @@ a {
 .cell {
     display: block;
     border: 1px solid #000;
-    padding: 1vh;
+    padding: 1vw;
     margin: 2vh auto;
     margin-top: 2vh;
     width: 70%;
