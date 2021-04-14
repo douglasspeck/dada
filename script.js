@@ -5,6 +5,17 @@ function dada() {
     document.getElementById('second').classList.remove('hidden');
     shuffle(words);
     for(let i=0; i<words.length; i++) {
+        words[i].replace(',', '');
+        words[i].replace('.', '');
+        words[i].replace(':', '');
+        words[i].replace('!', '');
+        words[i].replace('?', '');
+        words[i].replace('"', '');
+        words[i].replace(';', '');
+        words[i].replace('(', '');
+        words[i].replace(')', '');
+    }
+    for(let i=0; i<words.length; i++) {
         var newCell = stringToHTML('<div class="cell" ondrop="drop(event)"><span class="word" draggable="true" ondragstart="drag(event)">' + words[i] + '</span></div>');
         document.getElementById("words").append(newCell);
     }

@@ -106,7 +106,7 @@ a {
 
 #words {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .cell {
@@ -116,4 +116,9 @@ a {
     margin: 2vh auto;
     margin-top: 2vh;
     width: 70%;
+}
+
+.word {
+    margin: auto;
+    text-align: center;
 }
