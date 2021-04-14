@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 4%;
+    width: auto;
+    max-height: 99vh;
+    background-color: #ffa083;
+    font-family: "Montserrat", Sans-serif;
+}
+
+header {
+    display: block;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    padding: 1%;
+    margin: 0 auto 4%;
+    background-color: #fff;
+}
+
+h1 {
+    display: block;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+blockquote {
+    background: #ffa08333;
+    border-left: 10px solid #ffa083;
+    margin: auto;
+    margin-top: 2vh;
+    padding: 0.5em 10px;
+    text-align: justify;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote::before {
+    color: #ffa083;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+.content {
+    display: block;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    padding: 1%;
+    margin: 4% auto;
+    text-align: center;
+    background-color: #fff;
+}
+
+.content.hidden {
+    display: none;
+}
+
+h2 {
+    margin: 0.5vh auto;
+}
+
+textarea {
+    min-width: 90%;
+    max-width: 90%;
+    max-height: 30vh;
+    white-space: nowrap;
+    word-wrap: none;
+    font-size: 12px;
+}
+
+button {
+    border: 1px solid #000;
+    border-radius: 0;
+    width: 10vw;
+    height: 4vh;
+    background-color: transparent;
+    color: #000;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 1% auto;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: #ffa083;
+}
+
+footer {
+    background-color: #fff;
+    width: 30vw;
+    padding: 2vh;
+    margin: auto;
+    text-align: center;
+    border-radius: 4vh;
+}
+
+a {
+    font-weight: 700;
+    color: #000;
+}
+
+#words {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.cell {
+    display: block;
+    border: 1px solid #000;
+    padding: 1vh;
+    margin: 2vh auto;
+    margin-top: 2vh;
+    width: 70%;
+}
+
+.word {
+    border: red 1px solid;
+}
